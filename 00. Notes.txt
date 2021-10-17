@@ -1,0 +1,111 @@
+### Data Structures and Interview Bootcamp Notes ###
+-
+### BIG-O NOTATION ###
+Foca na quantidade de operações realizadas por cada algoritmo para satisfazer o objetivo.
+
+Mede a relação entre a quantidade de inputs e o runtime do algoritmo.
+
+A base para analisar qual algoritmo se sai melhor é o pior caso.
+
+Time Complexity
+        // Analisa o tempo gasto
+
+input sem interferir        O(1)
+loop                        O(n)
+loop dentro de outro        O(n²)
+
+DICAS ANALISAR BIG O NOTATION:
+
+1. Operações são constantes.
+2. Atribuição de variáveis são constantes.
+3. Acessar elementos de um array é uma constante.
+4. No loop, a complexidade é o tamanho do loop vezes a complexidade do que acontece dentro do loop.
+
+Space Complexity
+        // Analisa o espaço alocado
+
+1. primitivos são constantes.
+2. strings são O(n), onde n é o length da string.
+3. array e objetos são O(n), onde n é o tamanho do array ou objeto.
+
+BIG O NOTATION EM OBJETOS
+
+Quando usar objetos?
+- Quando não precisa de ordem
+- Quando precisa de acesso, inserção e remover rapidamente.
+
+BIG O DE CADA OPERAÇÃO DE OBJETOS:
+
+insertion	O(1)
+removal		O(1)
+searching	O(n)
+access		O(1)
+
+Object.keys     O(n)
+Object.values   O(n)
+Object.entries  O(n)
+hasOwnProperty  O(1)
+
+BIG O NOTATION EM ARRAYS
+
+Quando usar arrays?
+- Quando precisa de ordem
+- Quando precisa de acesso, inserção e remover rapidamente.
+
+BIG O DE CADA OPERAÇÃO DE ARRAYS:
+
+insertion       Depende         // para os dois casos adicionar/remover do
+removal         Depende            início aumenta a complexidade do BIG O
+searching       O(n)
+acess           O(1)
+
+ARRAY OPERATIONS BIG O
+
+push                            O(1)
+pop                             O(1)
+shift                           O(n)
+unshift                         O(n)
+concat                          O(n)
+slice                           O(n)
+splice                          O(n)
+sort                            O(n*log n)
+forEach/Map/Filter/Reduce/etc   O(n)
+
+### PROBLEM SOLVING APPROACH ###
+
+1. ENTENDER O PROBLEMA
+- Repensar em suas próprias palavras
+- Quais os inputs do problema?
+- Quais os outputs do problema?
+- Dá pra determinar o output através do input?
+- Rotular as partes importantes das partes do problema.
+
+2. EXEMPLOS CONCRETOS
+- Comece com exemplos simples
+- Crie exemplos mais complexos
+- Explore os exemplos com inputs vazios
+- Explore os exemplos com inputs inválidos
+
+3. QUEBRAR O PROBLEMA EM VÁRIOS SUB-PROBLEMAS
+
+4. RESOLVER OU SIMPLIFICAR
+- Encontre a dificuldade principal do problema
+- Ignore temporariamente essa dificuldade
+- Escreva uma solução simplificada
+- Incorpore a dificuldade de volta
+
+5. REVER E REFATORAR
+
+### PROBLEM SOLVING PATTERNS ###
+
+        FREQUENCY COUNTER PATTERN:
+                - Usa-se um objeto para contar as ocorrências e comparar.
+
+        MULTIPLE POINTERS PATTERN:
+                - Cria-se dois ponteiros. left/right.
+                - Deve estar ordenado.
+
+        SLIDING WINDOW PATTERN:
+                - 
+        DIVIDE AND CONQUER PATTERN:
+                - 
